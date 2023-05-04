@@ -1,0 +1,46 @@
+.home{
+    padding: 23px;
+}
+
+.navbar{
+    margin-bottom: 50px;
+}
+
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerLeft{
+    flex: 6;
+    padding: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerImage{
+   height: 100x;
+   align-items: center;
+   justify-content: center;
+}
+
+.title1{
+    font-size: 20px;
+}
+
+.title2{
+    font-size: 14px;
+}
+
+.bannerTitle{
+    margin-top: 30px;
+}
+
+.bannerRight{
+    flex: 6;
+}
+
+.rightBannerImg{
+    height: 480px;
+}
