@@ -1,0 +1,84 @@
+.footer {
+  background-color: #302c2c;
+  color: rgb(170, 170, 170);
+  align-items: center;
+  justify-content: center;
+  padding: 50px 95px;
+}
+
+.Container {
+  /* padding: 50px 95px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLeft {
+  flex: 6;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.CourseTube {
+  margin-bottom: 70px;
+}
+
+.footerRight {
+  flex: 6;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.CoursetubeTitle {
+  font-size: 25px;
+}
+
+.CourseTubeDes {
+  margin-bottom: 76px;
+}
+.CoursetubeDesc {
+  font-size: 20px;
+}
+
+.CoursetubeCopy {
+  font-size: 15px;
+}
+
+.productTitle {
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.productName{
+    font-size: 18px;
+}
+
+.products{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.product1{
+    cursor: pointer;
+}
+
+.socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Icons{
+    font-size: 45px;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green, purple } from "@mui/material/colors";
 import Home from "./Pages/HomePage/Home";
+import Footer from './Components/Footer/Footer';
 function App() {
   const theme = createTheme({
     palette: {
@@ -8,7 +9,7 @@ function App() {
         main: '#D95656',
       },
       secondary: {
-        main: green[500],
+        main: purple[500],
       },
     },
   });
@@ -18,6 +19,7 @@ function App() {
       <div className="App">
         <Home />
       </div>
+      <Footer/>
     </ThemeProvider>
   );
 }
