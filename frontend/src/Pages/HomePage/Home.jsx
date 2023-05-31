@@ -42,7 +42,7 @@ const Home = () => {
               </span>
             </div>
             <div className="bannerTitle">
-              <Button href="/domains"
+              <Button href="#/domains"
                 sx={{ height: "50px", borderRadius: "10px" }}
                 variant="contained"
               >
@@ -92,6 +92,8 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          
           <div className="serviceItem">
             <div className="serviceItemRow">
               <div className="iconDiv">
@@ -113,6 +115,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="serviceItem">
             <div className="serviceItemRow">
               <div className="iconDiv">

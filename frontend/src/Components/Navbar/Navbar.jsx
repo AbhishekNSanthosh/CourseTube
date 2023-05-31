@@ -6,13 +6,16 @@ import { InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ExploreDrop from '../ExploreDrop';
 import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
         <div className="logo">
+        <Link to='/' className="link">
           <img className="logoImg" src={logo} alt="logo"/>
+          </Link>
         </div>
         <div className="searchContainer">
           <div className="searchBox">

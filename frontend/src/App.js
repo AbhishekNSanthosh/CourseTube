@@ -23,9 +23,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
       <div className="App">
         <HashRouter>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/domains" element={<DomainPage />} />
