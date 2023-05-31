@@ -1,0 +1,41 @@
+.course-container {
+  padding: 45px;
+}
+
+.course-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.course-redtext {
+  color: #d95656;
+}
+
+.domain-title-container{
+    display: flex;
+    flex: start;
+    padding: 30px;
+}
+
+.course-item-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 40px;
+}
+
+.courseItem{
+    box-shadow: 0.02px 10px 10px rgb(194, 196, 196);
+    flex: 4;
+    background-color: white;
+    border-radius: 5px;
+    gap: 10px;
+    width: 350px;
+  }

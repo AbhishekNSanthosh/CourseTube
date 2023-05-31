@@ -13,18 +13,17 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import web from "../../Assets/icon2.png";
 import marketing from "../../Assets/icon3.png";
 import courseCard1 from "../../Assets/Image.png";
-import rating from "../../Assets/Frame 402.png";
-import avatar from "../../Assets/Avatar.png";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import avatar from "../../Assets/Avatar.png";
+import rating from "../../Assets/Frame 402.png";
 import courseCard2 from "../../Assets/Image (1).png";
 import courseCard3 from "../../Assets/Image (2).png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="navbar">
-        <Navbar />
-      </div>
+    
       <div className="bannerContainer">
         <div className="Container">
           <div className="bannerLeft">
@@ -43,7 +42,7 @@ const Home = () => {
               </span>
             </div>
             <div className="bannerTitle">
-              <Button
+              <Button href="/domains"
                 sx={{ height: "50px", borderRadius: "10px" }}
                 variant="contained"
               >
