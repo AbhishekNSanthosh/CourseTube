@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import TransitionsModal from "../SigninModal/Signin";
 
 const Navbar = () => {
-  const [modalOpen,setModalOpen] = useState(false)
+  const [modalOpen,setModalOpen] = useState(true)
 
 
 const handleClose = () => {
