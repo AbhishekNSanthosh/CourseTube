@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../Assets/CourseTube.png";
 import TextField from "@mui/material/TextField";
@@ -7,8 +7,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import ExploreDrop from '../ExploreDrop';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
+import TransitionsModal from "../SigninModal/Signin";
 
 const Navbar = () => {
+  const [modalOpen,setModalOpen] = useState(false)
+
+
+const handleClose = () => {
+  setModalOpen(false)
+}
   return (
     <div className="navbar">
       <div className="container">
@@ -49,10 +56,13 @@ const Navbar = () => {
             <span className="siginSpan">Signin</span>
           </div>
           <div className="createAccount">
-          <Button variant="contained">Creare free Account</Button>
+          <Button variant="contained" onClick={()=>{
+            setModalOpen(true)
+          }}>Creare free Account</Button>
           </div>
         </div>
       </div>
+      <TransitionsModal modalOpen={modalOpen} handleClose={handleClose}/>
     </div>
   );
 };

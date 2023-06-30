@@ -8,6 +8,7 @@ import { HashRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import CoursePage from "./Pages/CoursePage/CoursePage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import CourseVideo from './Pages/CourseVideo/CourseVideo';
+import TransitionsModal from "./Components/SigninModal/Signin";
 
 function App() {
   const theme = createTheme({
