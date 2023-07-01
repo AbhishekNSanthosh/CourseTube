@@ -8,6 +8,7 @@ import courseCard2 from "../../Assets/Image (1).png";
 import Button from "@mui/material/Button";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { Link } from "react-router-dom";
+import Courses from "../../Components/Courses/Courses";
 
 const CoursePage = () => {
   return (
@@ -45,49 +46,9 @@ const CoursePage = () => {
       <div className="course-item-grid-container">
 
         <Link to='/domains/ui/video' className="link">
-          <div className="courseItem">
-            <div className="courseCard">
-              <img src={courseCard2} alt="" className="courseCardImg" />
-            </div>
-            <div className="CourseDetails">
-              <div className="category">
-                <span className="categoryName">Design</span>
-              </div>
-              <div className="courseDetails">
-                <div className="course">
-                  <div className="courseTitle">
-                    <span className="courseName">Adobe Photoshop</span>
-                  </div>
-                  <div className="arrowIconoutword">
-                    <ArrowOutwardIcon className="arrowUp" />
-                  </div>
-                </div>
-                <div className="courseDesc">
-                  <span className="courseDescDetails">
-                    Design Web Sites and Mobile Apps that Your Users Love and
-                    Return to Again.
-                  </span>
-                </div>
-                <div className="rating">
-                  <img src={rating} alt="" className="ratingImg" />
-                </div>
-              </div>
-              <div className="provider">
-                <div className="providerDetails">
-                  <div className="avatar">
-                    <img src={avatar} alt="" className="avatarImg" />
-                  </div>
-                  <div className="providerName">
-                    <span className="providerNameSpan">Jenny Wilson</span>
-                  </div>
-                </div>
-                <div className="addButton">
-                  <Button variant="contained">Add</Button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Courses/>
         </Link>
+        
       </div>
     </div>
   );
