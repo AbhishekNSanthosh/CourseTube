@@ -9,6 +9,7 @@ import CoursePage from "./Pages/CoursePage/CoursePage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import CourseVideo from './Pages/CourseVideo/CourseVideo';
 import TransitionsModal from "./Components/SigninModal/Signin";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   const theme = createTheme({
@@ -32,6 +33,7 @@ function App() {
             <Route path="/domains" element={<DomainPage />} />
             <Route path="/domains/:courses" element={<CoursePage />} />
             <Route path="/domains/:courses/:video" element={<CourseVideo />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/404" element={<NotFoundPage />} />
             <Route path="*" element={<Navigate to="/404" />} />
           </Routes>
