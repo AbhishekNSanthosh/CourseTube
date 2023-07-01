@@ -19,6 +19,7 @@ import rating from "../../Assets/Frame 402.png";
 import courseCard2 from "../../Assets/Image (1).png";
 import courseCard3 from "../../Assets/Image (2).png";
 import { Link } from "react-router-dom";
+import Courses from "../../Components/Courses/Courses";
 
 const Home = () => {
   return (
@@ -147,133 +148,10 @@ const Home = () => {
         <div className="exploreCourse">
           <span className="Trending">Some Trending Courses</span>
         </div>
-        <div className="coursesList">
-          <div className="courseItem">
-            <div className="courseCard">
-              <img src={courseCard1} alt="" className="courseCardImg" />
-            </div>
-            <div className="CourseDetails">
-              <div className="category">
-                <span className="categoryName">Design</span>
-              </div>
-              <div className="courseDetails">
-                <div className="course">
-                  <div className="courseTitle">
-                    <span className="courseName">Figma UI UX Design</span>
-                  </div>
-                  <div className="arrowIconoutword">
-                    <ArrowOutwardIcon className="arrowUp"/>
-                  </div>
-                </div>
-                <div className="courseDesc">
-                  <span className="courseDescDetails">
-                    Use Figma to get a job in UI Design, User Interface, User
-                    Experience design.
-                  </span>
-                </div>
-                <div className="rating">
-                  <img src={rating} alt="" className="ratingImg" />
-                </div>
-              </div>
-              <div className="provider">
-                <div className="providerDetails">
-                  <div className="avatar">
-                    <img src={avatar} alt="" className="avatarImg" />
-                  </div>
-                  <div className="providerName">
-                    <span className="providerNameSpan">John Dae</span>
-                  </div>
-                </div>
-                <div className="addButton">
-                  <Button variant="contained">Add</Button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="courseItem">
-            <div className="courseCard">
-              <img src={courseCard2} alt="" className="courseCardImg" />
-            </div>
-            <div className="CourseDetails">
-              <div className="category">
-                <span className="categoryName">Design</span>
-              </div>
-              <div className="courseDetails">
-                <div className="course">
-                  <div className="courseTitle">
-                    <span className="courseName">Adobe Photoshop</span>
-                  </div>
-                  <div className="arrowIconoutword">
-                    <ArrowOutwardIcon className="arrowUp"/>
-                  </div>
-                </div>
-                <div className="courseDesc">
-                  <span className="courseDescDetails">
-                  Design Web Sites and Mobile Apps that Your Users Love and Return to Again.
-                  </span>
-                </div>
-                <div className="rating">
-                  <img src={rating} alt="" className="ratingImg" />
-                </div>
-              </div>
-              <div className="provider">
-                <div className="providerDetails">
-                  <div className="avatar">
-                    <img src={avatar} alt="" className="avatarImg" />
-                  </div>
-                  <div className="providerName">
-                    <span className="providerNameSpan">Jenny Wilson</span>
-                  </div>
-                </div>
-                <div className="addButton">
-                  <Button variant="contained">Add</Button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="courseItem">
-            <div className="courseCard">
-              <img src={courseCard3} alt="" className="courseCardImg" />
-            </div>
-            <div className="CourseDetails">
-              <div className="category">
-                <span className="categoryName">Design</span>
-              </div>
-              <div className="courseDetails">
-                <div className="course">
-                  <div className="courseTitle">
-                    <span className="courseName">Building User Interface..</span>
-                  </div>
-                  <div className="arrowIconoutword">
-                    <ArrowOutwardIcon className="arrowUp"/>
-                  </div>
-                </div>
-                <div className="courseDesc">
-                  <span className="courseDescDetails">
-                  Learn how to apply User Experience (UX) principles to your website designs.
-                  </span>
-                </div>
-                <div className="rating">
-                  <img src={rating} alt="" className="ratingImg" />
-                </div>
-              </div>
-              <div className="provider">
-                <div className="providerDetails">
-                  <div className="avatar">
-                    <img src={avatar} alt="" className="avatarImg" />
-                  </div>
-                  <div className="providerName">
-                    <span className="providerNameSpan">Esther Howard</span>
-                  </div>
-                </div>
-                <div className="addButton">
-                  <Button variant="contained">Add</Button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="coursesList">      
+          <Courses/>
+          <Courses/>
+          <Courses/>
         </div>
       </div>
 
