@@ -3,8 +3,11 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import './Signin.css'
+import signupimg from '../../Assets/Left.png'
+import { Checkbox, Divider, TextField } from '@mui/material';
+import { pink, purple } from '@mui/material/colors';
+import google from '../../Assets/google.png'
 
 const style = {
   position: 'absolute',
@@ -13,12 +16,11 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: '50%',
   bgcolor: 'background.paper',
-  border: '2px solid #000',
   boxShadow: 24,
   p: 4,
 };
 
-export default function TransitionsModal({modalOpen,handleClose}) {
+export default function TransitionsModal({ modalOpen, handleClose }) {
 
   return (
     <div>
@@ -36,13 +38,66 @@ export default function TransitionsModal({modalOpen,handleClose}) {
         }}
       >
         <Fade in={modalOpen}>
-          <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              Text in a modal
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
+          <Box sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '50%',
+            bgcolor: 'background.paper',
+            boxShadow: 24,
+            p: 4,
+            borderRadius: '10px'
+          }}>
+            <div className="signup">
+              <div className="signup-col">
+                <img src={signupimg} alt="" className="signup-img" />
+              </div>
+              <Divider orientation='vertical' sx={{
+                border: '0.5px solid lightgray',
+                height: '25rem'
+              }} />
+              <div className="signup-col">
+                <div className="signup-row">
+                  <div className="google-div">
+                    <img src={google} alt="" className="google-img" />
+                    <span className="google">Signup with google</span>
+                  </div>
+                </div>
+                {/* <Divider orientation='horizontal' sx={{
+                border: '.1px solid lightgray',
+                width: '10rem'
+              }} /> */}
+                <div className="signup-row">
+                  <TextField variant='outlined' label='Email' type='text' />
+                </div>
+                <div className="signup-row">
+                  <TextField variant='outlined' label='Password' type='text' />
+                </div>
+                <div className="signup-row check">
+                  <Checkbox
+                    size='13'
+                    // {...label}
+                    
+                    sx={{
+                      color: purple[800],
+                      '&.Mui-checked': {
+                        color: purple[600],
+                      },
+                    }}
+                  />
+                  <span className="checkbox">
+                    I agreed to the Terms & Conditions
+                  </span>
+                </div>
+                <div className="signup-row">
+                  <button className="signup-button">Sign Up</button>
+                </div>
+                <div className="signup-row check">
+                  <button className="create-button">Create Account</button>
+                </div>
+              </div>
+            </div>
           </Box>
         </Fade>
       </Modal>
