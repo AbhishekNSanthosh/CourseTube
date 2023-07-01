@@ -65,14 +65,16 @@ export default function CreateAccount({ modalSignUpOpen, handleClose }) {
                 </div>
                 <div className="signup-row">
                   <div className="google-div">
-                    <img src={google} alt="" className="google-img" />
-                    <span className="google">Signup with google</span>
+                    <span className="or">Or Signup with Email</span>
                   </div>
                 </div>
                 {/* <Divider orientation='horizontal' sx={{
                 border: '.1px solid lightgray',
                 width: '10rem'
               }} /> */}
+               <div className="signup-row">
+                  <TextField variant='outlined' label='Fullname' type='text' />
+                </div>
                 <div className="signup-row">
                   <TextField variant='outlined' label='Email' type='text' />
                 </div>
