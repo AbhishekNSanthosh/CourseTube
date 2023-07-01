@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
       </div>
       <TransitionsModal modalSignInOpen={modalSignInOpen} handleClose={handleClose} />
-      <CreateAccount modalSignUpOpen={modalSignUpOpen}/>
+      <CreateAccount modalSignUpOpen={modalSignUpOpen} handleClose={handleClose}/>
     </div>
   );
 };
