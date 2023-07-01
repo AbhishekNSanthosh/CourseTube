@@ -1,0 +1,107 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 85px 30px 85px;
+}
+
+.dasboard_items_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 100px;
+}
+
+.added_playlist{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Colored{
+    color: #d95656;
+}
+
+.playlist_list{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.dashboard_col_left{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard_col_right{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dasboard_right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.dashboard_right_row_col{
+    display: flex;
+    width: 23%;
+}
+
+.special_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74%;
+    gap: 20px;
+}
+
+.profile_pic{
+    border-radius: 70%;
+    border:15px solid #d47c7c;
+}
+
+.right_most{
+    border: 1px solid #ffbebe;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.special_row{
+    display: flex;
+    width: 100%;
+}
+
+.right_items{
+    text-transform: uppercase;
+}
+
+.dashboard_right_row{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+}
+
+.profile_name{
+    font-size: 28px;
+    font-weight: 600;
+}

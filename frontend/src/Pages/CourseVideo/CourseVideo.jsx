@@ -5,6 +5,7 @@ import playlist from "../../Assets/Image (4).png";
 import account from "../../Assets/Avatar (1).png";
 
 const CourseVideo = () => {
+
   return (
     <div className="course-video-container">
       <div className="video-container">
@@ -66,7 +67,7 @@ const CourseVideo = () => {
         <div className="share">
           <div className="share-row">
             <div className="viewbutton">
-              <button className="viewaccount">View Account</button>
+              <button className="viewaccount" >View Account</button>
             </div>
             <div className="viewbutton">
               <button className="sharebutton">Share</button>
