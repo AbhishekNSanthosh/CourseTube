@@ -3,7 +3,7 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import './Signin.css'
+import './CreateAccount.css'
 import signupimg from '../../Assets/Left.png'
 import { Checkbox, Divider, TextField } from '@mui/material';
 import { pink, purple } from '@mui/material/colors';
@@ -20,14 +20,13 @@ const style = {
   p: 4,
 };
 
-export default function TransitionsModal({ modalSignInOpen, handleClose }) {
-
+export default function CreateAccount({ modalSignUpOpen, handleClose }) {
   return (
     <div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        open={modalSignInOpen}
+        open={modalSignUpOpen}
         onClose={handleClose}
         closeAfterTransition
         slots={{ backdrop: Backdrop }}
@@ -37,7 +36,7 @@ export default function TransitionsModal({ modalSignInOpen, handleClose }) {
           },
         }}
       >
-        <Fade in={modalSignInOpen}>
+        <Fade in={modalSignUpOpen}>
           <Box sx={{
             position: 'absolute',
             top: '50%',
@@ -64,10 +63,18 @@ export default function TransitionsModal({ modalSignInOpen, handleClose }) {
                     <span className="google">Signup with google</span>
                   </div>
                 </div>
+                <div className="signup-row">
+                  <div className="google-div">
+                    <span className="or">Or Signup with Email</span>
+                  </div>
+                </div>
                 {/* <Divider orientation='horizontal' sx={{
                 border: '.1px solid lightgray',
                 width: '10rem'
               }} /> */}
+               <div className="signup-row">
+                  <TextField variant='outlined' label='Fullname' type='text' />
+                </div>
                 <div className="signup-row">
                   <TextField variant='outlined' label='Email' type='text' />
                 </div>
@@ -91,10 +98,10 @@ export default function TransitionsModal({ modalSignInOpen, handleClose }) {
                   </span>
                 </div>
                 <div className="signup-row">
-                  <button className="signup-button">Sign Up</button>
+                  <button className="signup-button">Create Account</button>
                 </div>
                 <div className="signup-row check">
-                  <button className="create-button">Create Account</button>
+                  <button className="create-button">Sign In</button>
                 </div>
               </div>
             </div>

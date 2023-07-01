@@ -10,6 +10,10 @@
   gap: 10px;
 }
 
+.siginSpan{
+  cursor: pointer;
+}
+
 .logo {
   flex: 2;
   align-items: center;
