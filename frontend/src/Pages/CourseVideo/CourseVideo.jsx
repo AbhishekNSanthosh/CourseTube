@@ -1,7 +1,7 @@
 import React from "react";
 import "./CourseVideo.css";
 import VideoImg from "../../Assets/Image (3).png";
-import playlist from "../../Assets/1.png";
+import playlist from "../../Assets/Image (4).png";
 import account from "../../Assets/Avatar (1).png";
 
 const CourseVideo = () => {
@@ -29,30 +29,22 @@ const CourseVideo = () => {
             <span className="title-name">Course Playlists</span>
           </div>
           <div className="playlist-column">
+
+            {/* component to be iterated */}
             <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
+              <div className="playlist_left">
+                <img src={playlist} alt="" className="playlist_img" />
+              </div>
+              <div className="playlist_right">
+                <div className="playlist_right_row">
+                  <span className="playlist_thumb">Python - Introduction</span>
+                </div>
+                <div className="playlist_right_row">
+                  <span className="playlist_thumb_time">5.08 m</span>
+                </div>
+              </div>
             </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
-            <div className="playlist">
-              <img src={playlist} alt="" className="playlist-img" />
-            </div>
+            {/* ** */}
           </div>
         </div>
       </div>
